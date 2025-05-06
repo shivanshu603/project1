@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9'
+        python-version: '3.10'
         
     - name: Install dependencies
       run: |
@@ -24,7 +24,7 @@ jobs:
         pip install -r requirements.txt
         python -m spacy download en_core_web_sm
         
-    - name: Run tests
+    - name: Run continuous_operation
       run: |
         pytest
 
@@ -37,7 +37,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9'
+        python-version: '3.10'
         
     -
         
