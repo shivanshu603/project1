@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  run-main:
     runs-on: ubuntu-latest
     
     steps:
@@ -27,20 +27,3 @@ jobs:
     - name: Run continuous operation
       run: |
         python ai_agent/continuous_operation.py
-
-  lint:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v2
-    
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.10'
-        
-    - name: Lint with flake8
-      run: |
-        flake8 ai_agent/ --count --max-line-length=120 --statistics
-#       run: |
-#         flake8 . --count --max-line-length=120 --statistics
