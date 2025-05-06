@@ -1,0 +1,2618 @@
+2025-03-02 00:53:53,170 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 00:53:53,170 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 00:54:00,325 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 00:54:00,325 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 00:54:12,597 - __main__ - INFO - Starting continuous operation...
+2025-03-02 00:54:12,611 - __main__ - ERROR - Error in job execution: 'NewsMonitor' object has no attribute 'monitor_sources'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 83, in run_job
+    asyncio.create_task(self.news_monitor.monitor_sources())
+AttributeError: 'NewsMonitor' object has no attribute 'monitor_sources'
+2025-03-02 00:54:12,628 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 00:55:12,808 - __main__ - ERROR - Error getting trending topics: (sqlite3.OperationalError) no such column: articles.summary
+[SQL: SELECT articles.id, articles.title, articles.content, articles.summary, articles.images, articles.url, articles.source_id, articles.published_at, articles.discovered_at, articles.author, articles.topic, articles.category, articles.language, articles.sentiment_score, articles.readability_score, articles.trending_topic_id 
+FROM articles 
+WHERE articles.published_at >= ?]
+[parameters: ('2025-03-01 00:55:12.648832',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-02 00:55:12,808 - __main__ - WARNING - No trending topics found
+2025-03-02 00:58:01,274 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 00:58:01,274 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 00:58:06,594 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 00:58:06,594 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 01:29:37,073 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 01:29:37,073 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 01:29:44,647 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 01:29:44,647 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 01:29:54,699 - __main__ - INFO - Starting continuous operation...
+2025-03-02 01:29:54,765 - __main__ - ERROR - Error getting trending topics: (sqlite3.OperationalError) no such column: articles.summary
+[SQL: SELECT articles.id, articles.title, articles.content, articles.summary, articles.images, articles.url, articles.source_id, articles.published_at, articles.discovered_at, articles.author, articles.topic, articles.category, articles.language, articles.sentiment_score, articles.readability_score, articles.trending_topic_id 
+FROM articles 
+WHERE articles.published_at >= ?]
+[parameters: ('2025-03-01 01:29:54.699096',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-02 01:29:54,765 - __main__ - WARNING - No trending topics found
+2025-03-02 01:29:56,107 - utils - INFO - Trending topics: []
+2025-03-02 01:32:29,377 - __main__ - INFO - Received shutdown signal. Cleaning up...
+2025-03-02 03:02:54,193 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:02:54,193 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 03:02:58,380 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:02:58,381 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 03:03:08,949 - __main__ - INFO - Starting continuous operation...
+2025-03-02 03:03:08,949 - __main__ - ERROR - Fatal error in main loop: type object 'Config' has no attribute 'WORDPRESS_SITE_URL'
+Traceback (most recent call last):
+  File "c:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 174, in main
+    await operation.run_continuous()
+  File "c:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 146, in run_continuous
+    logger.info("WordPress integration initialized with site: %s", Config.WORDPRESS_SITE_URL)
+AttributeError: type object 'Config' has no attribute 'WORDPRESS_SITE_URL'
+2025-03-02 03:03:08,955 - __main__ - INFO - Continuous operation stopped
+2025-03-02 03:08:53,908 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:08:53,908 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 03:08:58,973 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:08:58,973 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 03:25:30,184 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:25:30,184 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 03:25:35,768 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:25:35,768 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 03:25:45,618 - __main__ - INFO - Starting continuous operation...
+2025-03-02 03:25:45,618 - __main__ - INFO - WordPress integration initialized with site: None
+2025-03-02 03:25:45,703 - __main__ - ERROR - Error getting trending topics: (sqlite3.OperationalError) no such column: articles.images
+[SQL: SELECT articles.id, articles.title, articles.content, articles.images, articles.url, articles.source_id, articles.published_at, articles.discovered_at, articles.author, articles.topic, articles.category, articles.language, articles.sentiment_score, articles.readability_score, articles.trending_topic_id 
+FROM articles 
+WHERE articles.published_at >= ?]
+[parameters: ('2025-03-01 03:25:45.632643',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-02 03:25:45,703 - __main__ - WARNING - No trending topics found
+2025-03-02 03:25:47,013 - utils - INFO - Trending topics: []
+2025-03-02 03:32:11,698 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:32:11,698 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 03:32:17,093 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:32:17,093 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 03:32:35,795 - __main__ - INFO - Starting continuous operation...
+2025-03-02 03:32:35,795 - __main__ - INFO - WordPress integration initialized with site: https://timesofnewz.com/
+2025-03-02 03:32:36,043 - __main__ - ERROR - Error getting trending topics: (sqlite3.OperationalError) no such column: articles.images
+[SQL: SELECT articles.id, articles.title, articles.content, articles.images, articles.url, articles.source_id, articles.published_at, articles.discovered_at, articles.author, articles.topic, articles.category, articles.language, articles.sentiment_score, articles.readability_score, articles.trending_topic_id 
+FROM articles 
+WHERE articles.published_at >= ?]
+[parameters: ('2025-03-01 03:32:35.832200',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-02 03:32:36,045 - __main__ - WARNING - No trending topics found
+2025-03-02 03:32:37,375 - utils - INFO - Trending topics: []
+2025-03-02 03:35:56,609 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:35:56,609 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 03:36:01,643 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:36:01,643 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 03:36:12,995 - __main__ - INFO - Starting continuous operation...
+2025-03-02 03:36:12,995 - __main__ - INFO - WordPress integration initialized with site: https://timesofnewz.com/
+2025-03-02 03:36:13,832 - __main__ - ERROR - Error getting trending topics: (sqlite3.OperationalError) no such column: articles.images
+[SQL: SELECT articles.id, articles.title, articles.content, articles.images, articles.url, articles.source_id, articles.published_at, articles.discovered_at, articles.author, articles.topic, articles.category, articles.language, articles.sentiment_score, articles.readability_score, articles.trending_topic_id 
+FROM articles 
+WHERE articles.published_at >= ?]
+[parameters: ('2025-03-01 03:36:13.077792',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-03-02 03:36:13,832 - __main__ - WARNING - No trending topics found
+2025-03-02 03:36:15,032 - utils - INFO - Trending topics: []
+2025-03-02 03:38:08,068 - __main__ - INFO - Received shutdown signal. Cleaning up...
+2025-03-02 03:40:12,281 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:40:12,281 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 03:40:18,854 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 03:40:18,854 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 04:06:32,619 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:06:32,619 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 04:06:39,547 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:06:39,547 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 04:06:49,694 - __main__ - INFO - Starting continuous operation...
+2025-03-02 04:06:49,694 - __main__ - INFO - WordPress integration initialized with site: https://timesofnewz.com/
+2025-03-02 04:06:49,778 - __main__ - WARNING - No trending topics found
+2025-03-02 04:06:51,294 - utils - INFO - Trending topics: []
+2025-03-02 04:10:13,939 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:10:13,939 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 04:10:20,773 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:10:20,773 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 04:10:30,917 - __main__ - INFO - Starting continuous operation...
+2025-03-02 04:10:30,917 - __main__ - INFO - WordPress integration initialized with site: https://timesofnewz.com/
+2025-03-02 04:10:30,961 - __main__ - WARNING - No trending topics found
+2025-03-02 04:10:32,318 - utils - INFO - Trending topics: []
+2025-03-02 04:18:20,707 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:18:20,707 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 04:18:25,245 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:18:25,245 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 04:18:34,066 - __main__ - INFO - Starting continuous operation...
+2025-03-02 04:18:34,066 - __main__ - INFO - WordPress integration initialized with site: https://timesofnewz.com/
+2025-03-02 04:18:34,149 - __main__ - WARNING - No trending topics found
+2025-03-02 04:18:35,500 - utils - INFO - Trending topics: []
+2025-03-02 04:25:32,780 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:25:32,780 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 04:25:38,644 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:25:38,644 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 04:25:48,959 - __main__ - INFO - Starting continuous operation with 24/7 data retrieval and publishing...
+2025-03-02 04:25:48,959 - __main__ - INFO - WordPress integration initialized with site: https://timesofnewz.com/
+2025-03-02 04:25:48,961 - __main__ - INFO - Generating article...
+2025-03-02 04:25:50,208 - utils - INFO - Trending topics: []
+2025-03-02 04:25:50,774 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:25:50,775 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:25:50,776 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'NEWS_SOURCES'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 19, in __init__
+    self.sources = Config.NEWS_SOURCES  # List of news sources to scrape
+AttributeError: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:25:50,777 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:26:50,782 - __main__ - INFO - Generating article...
+2025-03-02 04:26:51,692 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:26:51,692 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:26:51,692 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'NEWS_SOURCES'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 19, in __init__
+    self.sources = Config.NEWS_SOURCES  # List of news sources to scrape
+AttributeError: type object 'Config' has no attribute 'NEWS_SOURCES'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 19, in __init__
+    self.sources = Config.NEWS_SOURCES  # List of news sources to scrape
+AttributeError: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:26:51,692 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:27:51,690 - __main__ - INFO - Generating article...
+2025-03-02 04:27:52,710 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:27:52,710 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:27:52,710 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'NEWS_SOURCES'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 19, in __init__
+    self.sources = Config.NEWS_SOURCES  # List of news sources to scrape
+AttributeError: type object 'Config' has no attribute 'NEWS_SOURCES'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 19, in __init__
+    self.sources = Config.NEWS_SOURCES  # List of news sources to scrape
+AttributeError: type object 'Config' has no attribute 'NEWS_SOURCES'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 19, in __init__
+    self.sources = Config.NEWS_SOURCES  # List of news sources to scrape
+AttributeError: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:27:52,710 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:28:52,711 - __main__ - INFO - Generating article...
+2025-03-02 04:28:53,702 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:28:53,718 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:28:53,721 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'NEWS_SOURCES'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 19, in __init__
+    self.sources = Config.NEWS_SOURCES  # List of news sources to scrape
+AttributeError: type object 'Config' has no attribute 'NEWS_SOURCES'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 19, in __init__
+    self.sources = Config.NEWS_SOURCES  # List of news sources to scrape
+AttributeError: type object 'Config' has no attribute 'NEWS_SOURCES'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 19, in __init__
+    self.sources = Config.NEWS_SOURCES  # List of news sources to scrape
+AttributeError: type object 'Config' has no attribute 'NEWS_SOURCES'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 19, in __init__
+    self.sources = Config.NEWS_SOURCES  # List of news sources to scrape
+AttributeError: type object 'Config' has no attribute 'NEWS_SOURCES'
+2025-03-02 04:28:53,756 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:30:07,386 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:30:07,386 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 04:30:13,913 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:30:13,913 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 04:30:22,787 - __main__ - INFO - Starting continuous operation with 24/7 data retrieval and publishing...
+2025-03-02 04:30:22,787 - __main__ - INFO - WordPress integration initialized with site: https://timesofnewz.com/
+2025-03-02 04:30:22,787 - __main__ - INFO - Generating article...
+2025-03-02 04:30:23,817 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:30:23,819 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:30:23,819 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:30:23,825 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:30:24,152 - utils - INFO - Trending topics: []
+2025-03-02 04:31:23,837 - __main__ - INFO - Generating article...
+2025-03-02 04:31:24,881 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:31:24,881 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:31:24,881 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:31:24,881 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:31:44,031 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:31:44,031 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 04:31:50,715 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:31:50,715 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 04:32:24,878 - __main__ - INFO - Generating article...
+2025-03-02 04:32:25,900 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:32:25,900 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:32:25,900 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:32:25,918 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:33:25,927 - __main__ - INFO - Generating article...
+2025-03-02 04:33:26,776 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:33:26,777 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:33:26,777 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:33:26,788 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:34:26,781 - __main__ - INFO - Generating article...
+2025-03-02 04:34:27,768 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:34:27,768 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:34:27,768 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:34:27,785 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:35:18,386 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:35:18,386 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 04:35:24,398 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:35:24,398 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 04:35:27,801 - __main__ - INFO - Generating article...
+2025-03-02 04:35:29,355 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:35:29,357 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:35:29,357 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:35:29,425 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:36:29,435 - __main__ - INFO - Generating article...
+2025-03-02 04:36:30,582 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:36:30,582 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:36:30,582 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:36:30,604 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:37:30,621 - __main__ - INFO - Generating article...
+2025-03-02 04:37:31,767 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:37:31,767 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:37:31,767 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:37:31,783 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:38:31,789 - __main__ - INFO - Generating article...
+2025-03-02 04:38:32,673 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:38:32,673 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:38:32,673 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:38:32,700 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:39:32,889 - __main__ - INFO - Generating article...
+2025-03-02 04:39:33,706 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:39:33,706 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:39:33,706 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:39:33,746 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:40:33,758 - __main__ - INFO - Generating article...
+2025-03-02 04:40:34,677 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:40:34,677 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:40:34,677 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:40:34,714 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:41:34,723 - __main__ - INFO - Generating article...
+2025-03-02 04:41:35,742 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:41:35,742 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:41:35,742 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:41:35,764 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:42:35,777 - __main__ - INFO - Generating article...
+2025-03-02 04:42:37,144 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:42:37,144 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:42:37,144 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:42:37,188 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:43:05,739 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:43:05,739 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-03-02 04:43:11,496 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+2025-03-02 04:43:11,496 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: clip-ViT-B-32
+2025-03-02 04:43:37,194 - __main__ - INFO - Generating article...
+2025-03-02 04:43:37,672 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:43:37,673 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:43:37,673 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:43:37,706 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:44:37,711 - __main__ - INFO - Generating article...
+2025-03-02 04:44:38,207 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:44:38,207 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:44:38,207 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:44:38,287 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:45:38,298 - __main__ - INFO - Generating article...
+2025-03-02 04:45:39,511 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:45:39,511 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:45:39,511 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:45:39,614 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:46:39,632 - __main__ - INFO - Generating article...
+2025-03-02 04:46:40,950 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:46:40,951 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:46:40,951 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:46:41,005 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:47:41,018 - __main__ - INFO - Generating article...
+2025-03-02 04:47:42,144 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:47:42,147 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:47:42,147 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:47:42,264 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:48:42,270 - __main__ - INFO - Generating article...
+2025-03-02 04:48:43,382 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:48:43,382 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:48:43,382 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:48:43,432 - __main__ - INFO - Retrying operation, attempt 1/3
+2025-03-02 04:49:43,438 - __main__ - INFO - Generating article...
+2025-03-02 04:49:44,289 - utils - ERROR - Error analyzing news trends: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:49:44,289 - utils - ERROR - Error generating article: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:49:44,289 - __main__ - ERROR - Error in job execution: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\siivanshu\Downloads\ai_agent\continuous_operation.py", line 88, in run_job
+    article = await self.blog_generator.generate_article()
+  File "C:\Users\siivanshu\Downloads\ai_agent\blog_generator.py", line 80, in generate_article
+    discoverer = NewsDiscoverer()
+  File "C:\Users\siivanshu\Downloads\ai_agent\news_discovery.py", line 21, in __init__
+    self.trending_window = Config.TRENDING_WINDOW_HOURS
+AttributeError: type object 'Config' has no attribute 'TRENDING_WINDOW_HOURS'
+2025-03-02 04:49:44,386 - __main__ - INFO - Retrying operation, attempt 1/3
