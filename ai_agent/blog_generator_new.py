@@ -133,10 +133,9 @@ class BlogGenerator:
                 content=content,
                 keywords=keyword_data
             )
-            # Map category IDs back to category names for WordPress API
-            id_to_name = {v: k for k, v in category_detector.category_mappings.items()}
-            categories = [id_to_name.get(cat_id, 'Uncategorized') for cat_id in categories_ids]
-            article.categories = categories
+            # Assign category IDs directly to article.categories to avoid type mismatch
+            article.categories = categories_ids
+
 
 
 
