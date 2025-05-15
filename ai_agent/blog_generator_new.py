@@ -128,12 +128,18 @@ class BlogGenerator:
             # Detect categories using CategoryDetector
             from category_detector import CategoryDetector
             category_detector = CategoryDetector()
-            categories = category_detector.detect_categories(
+            categories_ids = category_detector.detect_categories(
                 title=topic_name,
                 content=content,
                 keywords=keyword_data
             )
+            # Map category IDs back to category names for WordPress API
+            id_to_name = {v: k for k, v in category_detector.category_mappings.items()}
+            categories = [id_to_name.get(cat_id, 'Uncategorized') for cat_id in categories_ids]
             article.categories = categories
+
+
+
 
             # Extract and set tags
             tags = category_detector.extract_tags_from_title(topic_name)
@@ -371,6 +377,12 @@ class BlogGenerator:
         else:
             return f"Learn all about {topic} in this comprehensive article."
 
+    def _cleanup_memory(self):
+        """Clean up memory to prevent OOM issues"""
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+        gc.collect()
+        
     def _initialize_model(self):
         try:
             self.model_name = "gpt2"
@@ -381,6 +393,10 @@ class BlogGenerator:
                 truncation_side='left'
             )
             self.tokenizer.pad_token = self.tokenizer.eos_token
+            
+            # Clean up memory before loading model
+            self._cleanup_memory()
+            
             self.model = GPT2LMHeadModel.from_pretrained(
                 self.model_name,
                 pad_token_id=self.tokenizer.eos_token_id,
@@ -390,16 +406,20 @@ class BlogGenerator:
             )
             self.model = self.model.to('cpu')
             logger.info("Running model on CPU")
-            self.model.config.max_length = 1024  # Increased from 512 to 1024
-            self.model.config.max_position_embeddings = 1024  # Increased to match max_length
+            self.model.config.max_length = 1024
+            self.model.config.max_position_embeddings = 1024
             self.model.config.pad_token_id = self.tokenizer.pad_token_id
             self.model.config.eos_token_id = self.tokenizer.eos_token_id
             self.model.config.bos_token_id = self.tokenizer.bos_token_id
-            self.model.config.num_beams = 3  # Increased from 2 to 3 for better quality
-            self.model.config.length_penalty = 1.5  # Increased to favor longer sequences
-            self.model.config.no_repeat_ngram_size = 3  # Increased to prevent more repetition
+            self.model.config.num_beams = 3
+            self.model.config.length_penalty = 1.5
+            self.model.config.no_repeat_ngram_size = 3
             self.model.config.early_stopping = True
             self.model.eval()
+            
+            # Clean up again after model initialization
+            self._cleanup_memory()
+            
             logger.info(f"Successfully initialized {self.model_name} with stable configuration")
         except Exception as e:
             logger.error(f"Model initialization error: {e}")
@@ -427,38 +447,61 @@ class BlogGenerator:
                     top_k = 50
                     top_p = 0.95
                     repetition_penalty = 1.1
+                    do_sample = True
+                    num_beams = 3
                 elif attempt == 1:
                     temperature = 0.7
                     top_k = 40
                     top_p = 0.9
                     repetition_penalty = 1.2
+                    do_sample = True
+                    num_beams = 2
                 else:
+                    # Most conservative settings for last attempt
                     temperature = 0.6
                     top_k = 30
                     top_p = 0.85
                     repetition_penalty = 1.3
+                    do_sample = False  # Turn off sampling for last attempt
+                    num_beams = 1      # Use greedy decoding for stability
                 
                 # Clean up memory before generation
                 if torch.cuda.is_available():
                     torch.cuda.empty_cache()
                 
-                # Generate text with attention mask
-                output = self.model.generate(
-                    input_ids,
-                    max_length=min(max_length, 1024),  # Increased from 512 to 1024
-                    num_return_sequences=1,
-                    pad_token_id=self.tokenizer.eos_token_id,
-                    temperature=temperature,
-                    top_k=top_k,
-                    top_p=top_p,
-                    repetition_penalty=repetition_penalty,
-                    do_sample=True,
-                    no_repeat_ngram_size=3,
-                    early_stopping=True,
-                    num_beams=self.model.config.num_beams,
-                    length_penalty=self.model.config.length_penalty,  # Added length_penalty
-                    attention_mask=attention_mask
-                )
+                try:
+                    # Generate text with attention mask
+                    output = self.model.generate(
+                        input_ids,
+                        max_length=min(max_length, 1024),
+                        num_return_sequences=1,
+                        pad_token_id=self.tokenizer.eos_token_id,
+                        temperature=temperature,
+                        top_k=top_k,
+                        top_p=top_p,
+                        repetition_penalty=repetition_penalty,
+                        do_sample=do_sample,
+                        no_repeat_ngram_size=2,
+                        early_stopping=True,
+                        num_beams=num_beams,
+                        length_penalty=1.0 if attempt < 2 else 0.8,  # Reduce length penalty on last attempt
+                    )
+                except RuntimeError as e:
+                    if "probability tensor" in str(e) and attempt == max_attempts - 1:
+                        # Last resort: use greedy decoding with minimal parameters
+                        logger.warning("Using fallback greedy decoding as last resort")
+                        output = self.model.generate(
+                            input_ids,
+                            max_length=min(max_length, 512),  # Reduce max length
+                            num_return_sequences=1,
+                            pad_token_id=self.tokenizer.eos_token_id,
+                            do_sample=False,  # No sampling
+                            num_beams=1,      # Greedy search
+                            early_stopping=True,
+                        )
+                    else:
+                        raise
+
                 
                 # Decode the generated text
                 generated_text = self.tokenizer.decode(output[0], skip_special_tokens=True)
@@ -487,6 +530,7 @@ class BlogGenerator:
         if 'generated_text' in locals() and generated_text:
             logger.warning(f"Returning suboptimal content with {len(generated_text.split())} words after all attempts")
             return generated_text
+        
         
         logger.error("All generation attempts failed")
         return None
@@ -649,6 +693,9 @@ class BlogGenerator:
 
     async def generate_blog_content(self, topic: str, max_length: int = 4000) -> Optional[str]:  # Increased from 2000 to 4000
         try:
+            # Clean up memory before starting
+            self._cleanup_memory()
+            
             # Get keyword data for headings first
             keyword_data = {}
             if hasattr(self, 'keyword_researcher'):
@@ -659,6 +706,9 @@ class BlogGenerator:
             
             # Prepare prompt with keywords
             prompt = await self._prepare_prompt(topic)
+            
+            # Clean up memory again before tokenization
+            self._cleanup_memory()
 
             # Generate initial content
             input_ids = self.tokenizer.encode(prompt, return_tensors='pt')
@@ -672,21 +722,45 @@ class BlogGenerator:
             # Add attention mask to avoid warning
             attention_mask = torch.ones(input_ids.shape, dtype=torch.long)
             
-            output = self.model.generate(
-                input_ids,
-                max_length=min(max_length, 1024),  # Increased from 512 to 1024
-                num_return_sequences=1,
-                pad_token_id=self.tokenizer.eos_token_id,
-                temperature=0.8,  # Increased from 0.7 to 0.8 for more creativity
-                top_k=60,  # Increased from 50 to 60
-                top_p=0.95,  # Increased from 0.92 to 0.95
-                repetition_penalty=1.3,  # Increased from 1.2 to 1.3
-                do_sample=True,
-                num_beams=self.model.config.num_beams,
-                length_penalty=self.model.config.length_penalty,  # Added length_penalty
-                early_stopping=self.model.config.early_stopping,
-                attention_mask=attention_mask
-            )
+            try:
+                # First try with original parameters
+                output = self.model.generate(
+                    input_ids,
+                    max_length=min(max_length, 1024),
+                    num_return_sequences=1,
+                    pad_token_id=self.tokenizer.eos_token_id,
+                    temperature=0.8,
+                    top_k=60,
+                    top_p=0.95,
+                    repetition_penalty=1.3,
+                    do_sample=True,
+                    num_beams=self.model.config.num_beams,
+                    length_penalty=self.model.config.length_penalty,
+                    early_stopping=self.model.config.early_stopping,
+                )
+            except RuntimeError as e:
+                # If we get a probability tensor error, fall back to more stable parameters
+                if "probability tensor" in str(e):
+                    logger.warning("Falling back to more stable generation parameters")
+                    # Use more stable parameters
+                    output = self.model.generate(
+                        input_ids,
+                        max_length=min(max_length, 1024),
+                        num_return_sequences=1,
+                        pad_token_id=self.tokenizer.eos_token_id,
+                        temperature=0.7,  # Lower temperature for stability
+                        top_k=50,         # Lower top_k for stability
+                        top_p=0.92,       # Lower top_p for stability
+                        repetition_penalty=1.2,
+                        do_sample=True,
+                        num_beams=2,      # Fewer beams for stability
+                        no_repeat_ngram_size=2,
+                        early_stopping=True,
+                    )
+                else:
+                    # Re-raise if it's a different error
+                    raise
+
             generated_text = self.tokenizer.decode(output[0], skip_special_tokens=True)
             word_count = len(generated_text.split())
             preview = generated_text[:200] + "..." if len(generated_text) > 200 else generated_text
